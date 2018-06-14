@@ -1,0 +1,67 @@
+.cell {
+    min-height: 74px;
+    cursor: pointer;
+    line-height: 5rem;
+    font-size: 3rem;
+}
+
+.theme-dark .header {
+    width: 100%;
+    background: #000;
+    padding: 5px 0;
+}
+
+.header a.logo {
+    font-size: 2.4em;
+    line-height: 26px;
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+.header a.logo span {
+    font-size: 0.8em;
+}
+
+.header a.logo:hover {
+    color: #ffffff;
+}
+
+.page {
+    padding: 20px 0;
+}
+
+.theam-dark .table tr td {
+    border: 1px solid #d1d1d1;
+}
+
+.light-theme .border-bottom {
+    border-bottom: 1px solid #d1d1d1;
+}
+
+.light-theme .board-inner-side-border {
+    border-left: 1px solid #d1d1d1;
+    border-right: 1px solid #d1d1d1;
+}
+
+.light-theme .cell:hover {
+    background: rgba(0, 0, 0, .3);
+    transition: 1s;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+.theme-dark .well {
+    background: #eee;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+.theme-dark .stats-board-wrapper {
+    border-left: 1px solid #000;
+}
+
+input[type='text'].error {
+    border: 1px solid #F00;
+}

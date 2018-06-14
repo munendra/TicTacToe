@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Tic Tac Toe</title>
+    <script src="./lib/jquery-3.3.1.min.js"></script>
+    <script src="./lib/bootstrap.min.js"></script>
+    <script src="./script/form.validate.js"></script>
+    <script src="./script/players.js"></script>
+    <script src="./script/game.js"></script>
+    <script src="./script/app.js"></script>
+</head>
+
+<body class="theme-dark">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="header">
+                <div class="col-md-2">
+                    <a href="index.html" class="logo">
+                        #
+                        <span>Tic Tac Toe</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!---->
+        <div id="players" class="row well form-group animated zoomIn">
+            <div class="col">
+                <div class="form-group">
+                    <label for="player1Name">First player</label>
+                    <input type="text" value="Player 1" id="player1Name" class="required form-control" placeholder="First player name" />
+                </div>
+                <div class="form-group">
+                    <label for="player2Name">Second player</label>
+                    <input type="text" value="Player 2" id="player2Name" class="required form-control" placeholder="Second player name" />
+                </div>
+                <div class="form-group text-right">
+                    <button id="btnUndo" class="btn btn-info">
+                        <i class="fas fa-reply"></i> Undo
+                    </button>
+                    <button id="startGame" class="btn btn-success">
+                        Start
+                        <i class="fas fa-play"></i>
+                    </button>
+
+                </div>
+            </div>
+            <div class="col stats-board-wrapper">
+                <div class="stats-board">
+                    <h4>Stats</h4>
+                    <table class="table table-info table-striped text-center">
+                        <thead>
+                            <tr>
+                                <th>
+                                    <span id="Displayplayer1Name">Player 1</span>
+                                </th>
+                                <th>
+                                    <span id="Displayplayer2Name">Player 2</span>
+                                </th>
+                                <th>
+                                    <strong>Total</strong>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <span id="Displayplayer1Score">0</span>
+                                </td>
+                                <td>
+                                    <span id="Displayplayer2Score">0</span>
+                                </td>
+                                <td>
+                                    <span id="TotalMatch">0</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="row">
+                        <div class="col">
+                            <h3 id="displayMove">
+                                Move:
+                            </h3>
+                        </div>
+                        <div class="col">
+                            <h3 id="displayRes" class="text-right">
+                                Winner:
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <!---->
+        <div class="page">
+            <div class="row justify-content-center disabled" id="board">
+                <div class="col-6 justify-content-center ">
+                    <div class="row zoom-In text-center light-theme animated pulse" id="board-theme">
+                        <div id="cell-0" class="col cell" data-index="0"></div>
+                        <div id="cell-1" class="col cell board-inner-side-border" data-index="1"></div>
+                        <div id="cell-2" class="col cell" data-index="2"></div>
+                        <div class="w-100 border-bottom"></div>
+                        <div id="cell-3" class="col cell" data-index="3"></div>
+                        <div id="cell-4" class="col cell board-inner-side-border" data-index="4"></div>
+                        <div id="cell-5" class="col cell" data-index="5"></div>
+                        <div class="w-100 border-bottom"></div>
+                        <div id="cell-6" class="col cell" data-index="6"></div>
+                        <div id="cell-7" class="col cell board-inner-side-border" data-index="7"></div>
+                        <div id="cell-8" class="col cell" data-index="8"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
